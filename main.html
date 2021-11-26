@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Home Training Program for Unvaccinated.</title>
+    <link rel = "stylesheet" href="mine.css">
+</head>
+<body>
+    <header>
+        <div id = "main">
+            <a href="main.html"><h1>Home Training Package</h1></a>
+            <img src="메인/main1.jpg" id = "mainImage">
+            <br><br><br>
+            <span style="padding-top: 100px;"><div>운동 못하는걸</div><div>백신패스</div><div>탓 할꺼야?</div></span>
+            <br><br>
+            
+            <div style="font-size: 200%; color: bisque; padding: 10px;">Home Training Program for Unvaccinated.</div>    
+        </div>
+        
+        <script>
+            var myImg = document.getElementById("mainImage");
+            var imagearray = ["메인/main2.jpg", "메인/main3.jpg", "메인/main4.jpg","메인/main1.jpg"]
+            var imageindex = 0;
+
+            function change(){
+                myImg.setAttribute("src",imagearray[imageindex]);
+                imageindex++;
+                if(imageindex >= imagearray.length){imageindex = 0;}
+            }
+            setInterval(change,2000);
+        </script>
+    </header>
+    <br><br>
+    
+    <section>
+        <h1 style="text-align: left;" >Choose the exercise you want.</h1>        
+        <table>
+            <tr>
+            <td><a href="shoulder.html"><img alt="" src="메인\shoulder.jpg"/><br><span>Shoulder</span></a></td>
+            <td><a href="chest.html"><img alt="" src="메인\chest.jpg"/><br><span>chest</span></a></td>
+            <td><a href="back.html"><img alt="" src="메인\back.jpg"/><br><span>Back</span></a></td>
+            <tr>
+            <tr>
+                <td><a href="leg.html"><img alt="" src="메인\leg.jpg"/><br><span>Leg</span></a></td>
+                <td><a href="abs.html"><img alt="" src="메인\복근.jpg"/><br><span>Abs</span></a></td>
+                <td><a href="Aerobic.html"><img alt="" src="메인\유산소.jpg"/><br><span>Aerobic exercise</span></a></td>
+            </tr>            
+        </table>                
+    </section>
+    
+    <hr style="width: 1000px; color: black;">
+    <footer>
+        <h1 style="text-align: center;">Thanks for Trainer</h1>
+        <div>
+        <table>
+            <tr>
+            <td><a href="https://www.youtube.com/channel/UCkEQJUPvOVX0xNGLFYcTxfg"><img alt="" src="트레이너\길환.jpg"/><br><span>Hbro 길환TV</span></a></td>
+            <td><a href="https://www.youtube.com/c/%EA%B6%8C%ED%98%8189"><img alt="" src="트레이너\권혁.jpg"/><br><span>권혁 Hulk's TV</span></a></td>
+            </tr>
+            <tr>
+            <td><a href="https://www.youtube.com/user/TeamAirwave"><img alt="" src="트레이너\키다리형.jpg"/><br><span>키다리형</span></a></td>
+            <td><a href="https://www.youtube.com/channel/UCLG1XzhSPuuJ6hqaHhQaFkA"><img alt="" src="트레이너\양선수.jpg"/><br><span>양선수의 온라인PT</span></a></td>
+            </tr>             
+            <tr>
+                <td><a href="https://www.youtube.com/channel/UCB7A0Php3CJg4uH4HavVy-w"><img alt="" src="트레이너\고러쉬.jpg"/><br><span>고러쉬</span></a></td>
+                <td><a href="https://www.youtube.com/channel/UCDVQ0yDp7Bu-BxEfelTHL8g"><img alt="" src="트레이너\바벨라토르.jpg"/><br><span>바벨라토르 홈트레이닝</span></a></td>
+            </tr>             
+        </table>        
+        </div>
+    </footer>
+    
+</body>
+</html>
